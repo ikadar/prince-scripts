@@ -151,8 +151,6 @@ if (runsInPrince) {
     squeezeAll();
 }
 
-// prepareElements();
-
 /**
  * Converts a CSS size string to points (pt) with a customizable DPI.
  * If the size is unitless (e.g., "126"), it is treated as "126px".
