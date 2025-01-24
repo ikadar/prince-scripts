@@ -103,12 +103,15 @@ function prepareElements () {
 
         logInfo(element.id);
 
-        const maxWidthPt = convertToPt(window.getComputedStyle(element).maxWidth);
-        const maxFontSizePt = convertToPt(window.getComputedStyle(element).fontSize);
+        const maxWidth = window.getComputedStyle(element).maxWidth;
+        const maxFontSize = window.getComputedStyle(element).fontSize;
 
-        if (!maxWidthPt || !maxFontSizePt) {
+        if (!maxWidth || !maxFontSize || maxWidth === "none" || maxFontSize === "none") {
             return;
         }
+
+        const maxWidthPt = convertToPt(maxWidth);
+        const maxFontSizePt = convertToPt(maxFontSize);
 
         elementsToSqueeze[index] = {
             element: elements[index],
