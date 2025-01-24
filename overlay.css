@@ -2,7 +2,6 @@
     display: block;
     position: absolute;
     background-color: darkred;
-    background-image: url("./img/template-overlay.png");
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.3;
