@@ -6,7 +6,7 @@ let isResizing = false;
 let offsetX, offsetY;
 let aspectRatio = overlay.offsetWidth / overlay.offsetHeight; // Calculate initial aspect ratio
 
-overlay.style.backgroundImage = "./img/template-overlay.png";
+overlay.style.backgroundImage = 'url("./img/template-overlay.png")';
 
 // Dragging logic
 overlay.addEventListener('mousedown', (e) => {
