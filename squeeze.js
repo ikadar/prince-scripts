@@ -67,10 +67,6 @@ function getElementBoxWidth (el) {
 function squeeze (s) {
     logInfo("=== " + s.element.id + " ===");
     var newFontSizePt = calculateSqueezedFontSize(s.maxFontSizePt, s.maxWidthPt, getElementBoxWidth(s.element));
-    // if (!runsInPrince) {
-    //     // newFontSizePt = newFontSizePt / 0.77;
-    //     newFontSizePt = newFontSizePt * (96/72);
-    // }
     s.element.style.fontSize = newFontSizePt.toString() + "pt";
     s.element.style.maxWidth = s.maxWidth + "pt";
 }
